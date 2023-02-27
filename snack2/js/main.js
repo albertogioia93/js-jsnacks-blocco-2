@@ -6,8 +6,9 @@
 
 const input = Number(prompt('inserisci un numero'));
 
-if (input % 0) {
+if (input % 2 === 0) {
     console.log(input);
 } else {
-    console.log(input++);
+    const numeropiuuno = input + 1;
+    console.log(numeropiuuno);
 }
