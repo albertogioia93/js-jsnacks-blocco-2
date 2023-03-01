@@ -6,6 +6,21 @@
 
 // const numero = parseInt(prompt('inserisci un numero'));
 
-for (let i = 0; i < 5; i++){
-    const numero = parseInt(prompt('inserisci un numero'));
+// for (let i = 0; i < 5; i++){
+//     const numero = parseInt(prompt('inserisci un numero'));
+// }
+
+let sum = 0;
+
+let count = 1;
+while(count <= 5){
+
+    const input = Number(prompt(`inserisci un numero (${count})`));
+    console.log(input);
+    if(!isNaN(input)){
+        sum += input;
+        count++;
+    }
 }
+
+alert(sum);
